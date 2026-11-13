@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Real-time, physics-informed control of robotic mortar printing and crack filling, with measured results from physical experiments." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="From Particles to Precision | Adaptive Material Robotics" property="og:title"/>
+<meta content="DEM-informed reinforcement learning and real-time laser feedback for robotic material deposition and repair." property="og:description"/>
+<meta content="assets/og-cover.jpg" property="og:image"/>
+<meta content="light" name="color-scheme"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link as="image" href="assets/images/dem-section.webp" rel="preload"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet"/>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer="" src="script.js"></script>
+<title>From Particles to Precision | Real-Time Adaptive Deposition</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="top">
+<div class="nav-shell">
+<a aria-label="From Particles to Precision, back to top" class="brand" href="#top"><span aria-hidden="true" class="brand-symbol"><i></i><i></i><i></i><i></i><i></i><i></i></span><span><strong>FROM PARTICLES <em>TO PRECISION</em></strong><small>ADAPTIVE MATERIAL ROBOTICS</small></span></a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Main navigation" class="site-nav" id="site-nav"><a href="#method">Method</a><a href="#arslan">Mortar printing</a><a href="#repair">Gap repair</a><a href="#joshua">Crack filling</a><a class="nav-cta" href="#publications">Papers</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="hero dark-section">
+<div aria-hidden="true" class="ambient ambient-one"></div><div aria-hidden="true" class="ambient ambient-two"></div>
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<div class="eyebrow"><span class="eyebrow-rule"></span> REAL-TIME DEPOSITION / DEM-INFORMED LEARNING</div>
+<h1>From <span class="h1-serif">Particles</span><br/>to <span class="h1-accent">Precision.</span></h1>
+<p class="hero-subtitle">Physics-informed, real-time control of robotic material deposition</p>
+<div aria-label="Featured researchers" class="hero-byline"><span class="hero-byline-label">RESEARCH BY</span><span class="hero-byline-names"><strong>Muhammad Arslan</strong><span aria-hidden="true">·</span><strong>Joshua Genova</strong><span aria-hidden="true">·</span><strong>Vedhus Hoskere</strong></span><span class="hero-byline-lab"></span></div>
+<p class="hero-body">Material behavior changes during printing, while geometric tolerances remain strict. A discrete element method (DEM) model provides training data for the initial control policy. During execution, laser measurements update a learned deposition model in real time, allowing the robot to adjust speed and nozzle offset. A related system applies online feedback to robotic crack filling.</p>
+<div class="hero-actions"><a class="button button-primary" href="#method">Approach <span aria-hidden="true">→</span></a><a class="text-link" href="#arslan">Results</a></div>
+</div>
+<div class="hero-visual">
+<div class="hero-panel hero-panel-composite">
+<div class="panel-top"><div><span aria-hidden="true" class="live-dot"></span> 01 / CHALLENGE</div><span class="mono">REAL-TIME RESPONSE · DIMENSIONAL ACCURACY</span></div>
+<div class="hero-challenge-banner">Mortar properties change during deposition. Layer dimensions must still meet construction tolerances.</div>
+<div class="hero-composite-stage">
+<div class="hero-dem-card">
+<div class="hero-card-kicker">DEM SIMULATION</div>
+<video aria-label="Discrete Element Method simulation of mortar deposition" class="research-video hero-dem-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/dem-section.webp" preload="metadata"><source src="assets/videos/dem-simulation.mp4" type="video/mp4"/></video>
+<p>Particle-scale mortar deposition</p>
+</div>
+<div aria-hidden="true" class="hero-arrow-flow"><span>DEM → RL prior</span></div>
+<div class="hero-real-grid">
+<figure class="hero-real-card">
+<div class="hero-card-kicker">PHYSICAL PRINTING · FIXED</div>
+<video aria-label="Fixed-parameter mortar printing experiment" class="research-video hero-real-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/fixed-parameter-printing-poster.webp" preload="metadata"><source src="assets/videos/fixed-parameter-printing.mp4" type="video/mp4"/></video>
+<figcaption>Fixed nozzle settings</figcaption>
+</figure>
+<figure class="hero-real-card hero-real-card-adaptive">
+<div class="hero-card-kicker">PHYSICAL PRINTING · ADAPTIVE</div>
+<video aria-label="Adaptive mortar printing experiment with online model updates" class="research-video hero-real-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/hybrid-adaptive-printing-poster.webp" preload="metadata"><source src="assets/videos/hybrid-adaptive-printing.mp4" type="video/mp4"/></video>
+<div class="adapt-callout">Real-time laser feedback</div>
+<figcaption>Online IELM + constrained MPC</figcaption>
+</figure>
+</div>
+</div>
+<div class="panel-bottom panel-bottom-compact"><div class="hero-symbol"><span class="mini-circle"></span><span class="mini-circle"></span><span class="mini-circle"></span><span class="mini-arrow">→</span><span class="mini-measure"></span></div><div><strong>Mechanics-informed control</strong><p>The DEM-trained policy guides initial actions. Laser feedback updates the IELM model, and MPC selects bounded corrections as printing proceeds.</p></div></div>
+</div>
+<div class="visual-caption">Left: DEM simulation. Right: fixed-parameter and adaptive physical printing</div>
+
+</div>
+</div>
+
+</section>
+
+<section class="method-section" id="method">
+<div class="wrap section-pad">
+<div class="section-eyebrow light-eye">01 / METHOD</div>
+<div class="method-head"><div><h2>DEM-informed<br/><em>adaptive control</em></h2><p>Discrete element method (DEM) simulations generate data for reinforcement learning. During printing, laser scans update an incremental extreme learning machine (IELM) that predicts layer geometry. Model predictive control (MPC) selects feasible nozzle commands.</p></div><span class="method-side-label">DEM → RL → REAL-TIME LASER FEEDBACK → IELM → MPC</span></div>
+<div aria-label="Arslan adaptive printing pipeline" class="pipeline">
+<div class="pipeline-step"><span class="step-kicker">01 · OFFLINE</span><div class="pipeline-node"><span class="pipeline-icon">◌</span><strong>Simulate</strong></div><p>DEM models particle contact, friction, and adhesion.</p></div>
+<div class="pipeline-step"><span class="step-kicker">02 · OFFLINE</span><div class="pipeline-node"><span class="pipeline-icon">↗</span><strong>Learn a prior</strong></div><p>Simulated deposition data trains the initial RL policy.</p></div>
+<div class="pipeline-step active"><span class="step-kicker">03 · ON THE ROBOT</span><div class="pipeline-node"><span class="pipeline-icon">◎</span><strong>Observe &amp; adapt</strong></div><p>Laser scans update the IELM model during printing.</p></div>
+<div class="pipeline-step active"><span class="step-kicker">04 · ON THE ROBOT</span><div class="pipeline-node"><span class="pipeline-icon">⌁</span><strong>Constrain action</strong></div><p>MPC selects feasible changes in speed and nozzle offset.</p></div>
+</div>
+<div class="dem-feature"><div class="dem-feature-image"><div class="dem-caption-top"><span>SIMULATION</span><span>ALTAIR EDEM / ARSLAN</span></div><video aria-label="DEM particle deposition simulation" class="research-video dem-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/dem-section.webp" preload="none"><source src="assets/videos/dem-simulation.mp4" type="video/mp4"/></video><div class="dem-scale"><span class="scale-line"></span><span>PARTICLE BED / DEPOSITION GEOMETRY</span></div></div><div class="dem-feature-content"><span class="micro-label">DISCRETE ELEMENT METHOD</span><h3>Particle-based deposition model</h3><p>DEM represents mortar as interacting particles governed by Hertz–Mindlin contact mechanics and JKR adhesion. Varying cohesion, nozzle speed, and offset produces data for offline reinforcement learning.</p><p class="small-caveat">The DEM model uses simplified material parameters. During physical printing, the controller updates its learned geometry predictor; DEM parameters remain fixed.</p></div></div>
+
+<div aria-label="Compact formulation for DEM, reinforcement learning, online IELM updates, and constrained control" class="science-frame">
+<div class="science-head"><span>COMPACT FORMULATION</span><span>DEM / RL / IELM / MPC</span></div>
+<div class="equation-grid">
+<div class="equation-card"><small>DEM</small><div class="equation-block">\[ m_i \ddot{\mathbf{x}}_i = \sum_j \left(\mathbf{f}_{ij}^{n}+\mathbf{f}_{ij}^{t}+\mathbf{f}_{ij}^{adh}\right) + m_i\mathbf{g} \]</div><p>Particle forces determine the simulated material motion.</p></div>
+<div class="equation-card"><small>RL prior</small><div class="equation-block">\[ u_k^{\mathrm{RL}} = \pi_\theta(s_k), \qquad \theta^\star = \arg\max_\theta \mathbb{E}\!\left[\sum_k r_k\right] \]</div><p>Offline RL learns a policy from simulated deposition data.</p></div>
+<div class="equation-card"><small>Online IELM</small><div class="equation-block">\[ \hat{y}_k = H(u_k)\beta_k, \qquad \beta_k = \beta_{k-1} + K_k\!\left(y_k - H(u_k)\beta_{k-1}\right) \]</div><p>Recursive updates fit the geometry predictor to laser measurements.</p></div>
+<div class="equation-card"><small>Constrained control</small><div class="equation-block">\[ u_k^\star = \arg\min_{u\in\mathcal{U}} \lVert \hat{y}_{k+1}(u)-y^\star \rVert_Q^2 + \lVert u-u_k^{\mathrm{RL}} \rVert_R^2 \]</div><p>MPC selects nozzle commands within predefined limits.</p></div>
+</div>
+<p class="science-qualification">Here, \(u_k=(v_k,o_k)\) denotes nozzle speed and vertical offset, and \(y_k=(w_k,h_k)\) denotes the measured layer width and height.</p>
+<span class="science-source">SOURCE: ARSLAN, MANGI &amp; HOSKERE, JCCE; ARSLAN DISSERTATION, CH. 4</span>
+</div></div>
+</section>
+
+<section class="case-section case-arslan" id="arslan">
+<div class="wrap case-wrap">
+<div class="case-head"><div class="case-number"><span>CASE STUDY</span><strong>01</strong></div><div class="case-title-block"><div class="case-tags"><span>DEM + SIM2REAL</span><span>CONTINUAL LEARNING</span><span>CONSTRAINED CONTROL</span></div><h2>Adaptive mortar<br/><em>printing</em></h2><p class="case-author">Muhammad Arslan <span>·</span> Abdul Wahid Mangi <span>·</span> Vedhus Hoskere</p></div></div>
+<div class="case-feature">
+<div class="case-feature-copy"><span class="micro-label coral">EXPERIMENT</span><h3>Material-dependent deposition</h3><p>In an eight-layer experiment, the mortar changed to a more flowable mix after layer four. A DEM-trained RL policy proposed nozzle settings. Laser feedback updated the IELM predictor, and MPC selected the next speed and offset.</p><div class="fact-line"><span>Physical experiment</span><strong>Eight layers; material changed after layer four</strong></div><a class="external-link" href="#publications">Publication details <span aria-hidden="true">↗</span></a></div>
+
+</div>
+<div class="result-panel"><div class="result-panel-label">MEASURED PERFORMANCE <span>· STABILIZED CONDITIONS</span></div><div class="result-metrics"><div><strong>1.5<span> mm</span></strong><p>Mean absolute error<br/>in layer width</p></div><div><strong>0.6<span> mm</span></strong><p>Mean absolute error<br/>in layer height</p></div><div class="result-explainer"><span>RESULT SCOPE</span><p>The hybrid controller had the lowest overall error on the evaluated stabilized layers. Each strategy was tested in one eight-layer sequence.</p></div></div></div>
+<section aria-labelledby="printing-videos-title" class="case-video-compare">
+<div class="clip-section-header">
+<div><span class="micro-label coral">VIDEO RESULTS / CONTROLLED MATERIAL CHANGE</span><h3 id="printing-videos-title">Printing under a material change</h3></div>
+<p>Recordings of the fixed-parameter and adaptive-control experiments.</p>
+</div>
+<div class="paired-clips">
+<figure class="clip-card">
+<div class="clip-index">01 <span>/</span> FIXED-PARAMETER BASELINE <span class="clip-time">10 SEC</span></div>
+<video aria-label="Fixed-speed and offset mortar printing baseline" class="research-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/fixed-parameter-printing-poster.webp" preload="none"><source src="assets/videos/fixed-parameter-printing.mp4" type="video/mp4"/>Actual printing video requires MP4 playback.</video>
+<figcaption><strong>Fixed speed and offset</strong><span>Fixed-parameter baseline.</span></figcaption>
+</figure>
+<figure class="clip-card clip-card-highlight">
+<div class="clip-index">02 <span>/</span> ADAPTIVE RL–IELM–MPC <span class="clip-time">7 SEC</span></div>
+<video aria-label="Hybrid adaptive mortar printing with reinforcement learning, online IELM, and MPC" class="research-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/hybrid-adaptive-printing-poster.webp" preload="none"><source src="assets/videos/hybrid-adaptive-printing.mp4" type="video/mp4"/>Actual printing video requires MP4 playback.</video>
+<figcaption><strong>RL-IELM-MPC</strong><span>Laser feedback with bounded control updates.</span></figcaption>
+</figure>
+</div>
+<div aria-label="Numerical comparison of stabilized printing error from experiments" class="clip-metrics">
+<div><span>WIDTH MAE</span><strong>15.2 <i>→</i> 1.5 <small>mm</small></strong><p>Fixed parameters → hybrid controller</p></div>
+<div><span>HEIGHT MAE</span><strong>6.7 <i>→</i> 0.6 <small>mm</small></strong><p>Fixed parameters → hybrid controller</p></div>
+</div>
+<p class="clip-source">Stabilized layers L2-L4 and L6-L8, one trial per strategy. Arslan et al., Table 4; videos from the supplied presentation.</p>
+</section>
+
+<div class="plot-panel"><div><div class="section-eyebrow small-eyebrow">MEASURED RESPONSE <span>/</span> CHANGE OF MATERIAL</div><h3>Layer width and height</h3><p>Laser scans track bead width and height across the material change.</p></div><div class="plot-grid"><figure><img alt="Width versus path position plot for dry and wet mixtures showing adaptation from the initial layer to subsequent layers." height="684" loading="lazy" src="assets/images/width-recovery-plot.webp" width="1050"/><figcaption>Layer width response</figcaption></figure><figure><img alt="Height versus path position plot for dry and wet mixtures showing correction after initial identification." height="684" loading="lazy" src="assets/images/height-recovery-plot.webp" width="1050"/><figcaption>Layer height response</figcaption></figure></div></div>
+</div>
+</section>
+<section class="repair-section light-section" id="repair"><div class="wrap repair-grid section-pad"><div class="repair-copy"><div class="section-eyebrow">02 / SAME-LAYER REPAIR</div><h2>Measured same-layer<br/><em>gap repair</em></h2><p>Laser scans locate missing mortar and measure the gaps. A calibrated deposition model sets robot speed and auger frequency for each return pass. A residual model trained on earlier tests adjusts the requested deposition area.</p><div class="repair-highlight"><strong>100<span>%</span></strong><div><b>Reference-based deficit closure</b><p>In the evaluated residual-informed (B3) single- and double-gap tests.</p></div></div><p class="caution-copy">The reported closure measures geometric underfill in the tested regions. Laser scans still found local overfill. Mechanical performance was not tested.</p></div><figure class="repair-figure"><img alt="Arslan dissertation Figure 47 showing an extrusion gap before repair, localized same-layer corrective deposition afterward, and laser-measured area profiles before and after." height="1243" loading="lazy" src="assets/images/repair-verification.webp" width="850"/><figcaption>Arslan dissertation, Fig. 47: single-gap repair with pre- and post-repair laser measurements.</figcaption></figure></div>
+<div aria-labelledby="repair-video-title" class="wrap repair-clips">
+<div class="clip-section-header light-clip-head">
+<div><span class="section-eyebrow">PHYSICAL VIDEO RESULTS <span>/</span> REPAIR</span><h3 id="repair-video-title">Single- and double-gap repair</h3></div>
+<p>For B3, an offline-trained residual model adjusted the material request before each repair pass.</p>
+</div>
+<div class="paired-clips">
+<figure class="clip-card">
+<div class="clip-index">G1 <span>/</span> SINGLE-GAP REPAIR <span class="clip-time">9 SEC</span></div>
+<video aria-label="Physical single-gap same-layer mortar repair with the B3 residual-informed strategy" class="research-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/single-gap-repair-poster.webp" preload="none"><source src="assets/videos/single-gap-repair.mp4" type="video/mp4"/>Single-gap repair video requires MP4 playback.</video>
+<figcaption><strong>One repair traverse</strong><span>Single gap (G1).</span></figcaption>
+</figure>
+<figure class="clip-card">
+<div class="clip-index">G2 <span>/</span> DOUBLE-GAP REPAIR <span class="clip-time">29 SEC</span></div>
+<video aria-label="Physical two-gap same-layer mortar repair with two separate traverses and repositioning" class="research-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/double-gap-repair-poster.webp" preload="none"><source src="assets/videos/double-gap-repair.mp4" type="video/mp4"/>Double-gap repair video requires MP4 playback.</video>
+<figcaption><strong>Two repair traverses</strong><span>Two gaps with repositioning (G2).</span></figcaption>
+</figure>
+</div>
+<p class="clip-source dark-clip-source">Source: supplied Arslan presentation, slide 3. The post-repair geometry was measured by laser scanner.</p>
+</div>
+</section>
+<section class="case-section case-joshua" id="joshua"><div class="wrap case-wrap"><div class="case-head"><div class="case-number"><span>CASE STUDY</span><strong>02</strong></div><div class="case-title-block"><div class="case-tags"><span>VISION + LASER</span><span>LAG-AWARE FEEDBACK</span><span>ONLINE LEARNING</span></div><h2>Adaptive crack<br/><em>filling</em></h2><p class="case-author">Joshua Genova <span>·</span> Vedhus Hoskere</p></div></div>
+<div class="joshua-feature"><div class="joshua-picture-grid"><figure class="robot-image"><img alt="Joshua Genova's mobile robotic platform with a mounted UR10e arm, extrusion nozzle, and sensing hardware." height="1080" loading="lazy" src="assets/images/joshua-mobile-robot.webp" width="681"/><figcaption>MOBILE ROBOT + EXTRUSION SYSTEM</figcaption></figure><figure class="crack-image"><img alt="Concrete paver with a visible repaired crack and red laser line during the robotic crack-repair experiment." height="738" loading="lazy" src="assets/images/joshua-crack-surface.webp" width="756"/><figcaption>REPAIR ON CONCRETE PAVERS</figcaption></figure></div>
+<div class="joshua-text"><span class="micro-label coral">EXPERIMENT</span><h3>Lag-aligned laser feedback</h3><p>RGB-D vision maps each crack, and laser scans measure the deposited sealant. The controller aligns delayed measurements with earlier nozzle commands, updates the deposition model online, and adjusts travel speed to regulate fill geometry.</p><a class="external-link" href="https://jtgenova.github.io/robotic-crack-repair/" rel="noopener noreferrer" target="_blank">Explore project website <span aria-hidden="true">↗</span></a></div>
+</div>
+<div class="joshua-evidence"><div class="joshua-stat"><span class="eyebrow light-eye">SIX STANDARDIZED TRIALS</span><strong>12.17<span>%</span></strong><b>Mean fill-error MAE, online IELM</b><p>Static calibration yielded 27.32% MAE. Results are averages of six trial-level errors.</p></div><div class="joshua-chart-panel"><div class="chart-header"><div><h3>Fill and depth error</h3><p>Mean absolute error across six trials</p></div><div aria-label="Select an experimental metric" class="chart-switch" role="group"><button aria-pressed="true" class="metric-btn selected" data-metric="fill" type="button">Fill error</button><button aria-pressed="false" class="metric-btn" data-metric="depth" type="button">Depth error</button></div></div><div aria-label="Actual six-trial averaged fill-error mean absolute error, comparing PI, IMC, static calibration, and online IELM" class="bar-chart" id="joshua-chart" role="img"><div class="chart-row"><span>PI</span><div class="bar-track"><div class="chart-bar" style="width:82.6%"></div></div><b>33.04%</b></div><div class="chart-row"><span>IMC</span><div class="bar-track"><div class="chart-bar" style="width:75.45%"></div></div><b>30.18%</b></div><div class="chart-row"><span>Static</span><div class="bar-track"><div class="chart-bar" style="width:68.3%"></div></div><b>27.32%</b></div><div class="chart-row best"><span>IELM</span><div class="bar-track"><div class="chart-bar" style="width:30.43%"></div></div><b>12.17%</b></div></div><p class="chart-footnote" id="chart-description">Source: Genova &amp; Hoskere, Table 6; means of six trial-level MAEs. Full experimental details at the project site.</p></div></div>
+<div class="paver-result"><div class="paver-media"><video aria-label="Video footage of the robotic arm operating during crack repair" class="research-video vertical-video paver-wide-video" data-scroll-play="" loop="" muted="" playsinline="" poster="assets/images/crack-video-poster.webp" preload="none"><source src="assets/videos/crack-repair.mp4" type="video/mp4"/>Robotic crack-repair video unavailable.</video></div><div class="paver-copy"><span class="micro-label">CONCRETE-PAVER EXPERIMENT</span><h3>Paver recess accuracy</h3><p>The target sealant recess was 3.175 mm. Across 19 waypoints, the mean absolute recess error was 0.6845 mm. Every measurement fell within the reported 1.5875–4.7625 mm interval (FAA AC 150/5370-10H, Item P-605).</p><div class="paver-number"><strong>0.68<span> mm</span></strong><p>Recess-error MAE<br/>Concrete-paver testbed</p></div><p class="scope-inline">The paver tests used cleaned cracks and manual mobile-base positioning. Internal fill and adhesion were not measured.</p></div></div>
+</div></section>
+
+
+<section class="publications light-section" id="publications"><div class="wrap section-pad"><div class="section-eyebrow">04 / PUBLICATIONS</div><div class="publication-title"><h2>Publications</h2><p>Accepted journal papers.</p></div><div class="publication-grid">
+<article class="publication publication-primary">
+<span class="pub-id">01 / ACCEPTED JOURNAL PAPER · MORTAR PRINTING</span>
+<h3>Real-Time Adaptive Control with Continual Learning for Robotic Construction 3D Printing</h3>
+<p class="pub-citation">Arslan, M., Mangi, A. W., and Hoskere, V. (2026). “Real-Time Adaptive Control with Continual Learning for Robotic Construction 3D Printing.” <em>Journal of Computing in Civil Engineering</em>, American Society of Civil Engineers (ASCE), accepted for publication.</p>
+<div class="pub-meta"><span class="pub-coming">PAPER COMING SOON</span><span class="pub-accept">Accepted · October 2026</span></div>
+<p class="pub-doi">DOI (pending activation): <code>10.1061/JCCEE5.CPENG-8585</code></p>
+<p class="pub-note">Accepted; publisher DOI page pending.</p>
+</article>
+<article class="publication publication-primary">
+<span class="pub-id">02 / ACCEPTED JOURNAL PAPER · CRACK REPAIR</span>
+<h3>Real-Time Vision-Based Adaptive Robotics for Autonomous Crack Repair in Civil Infrastructure</h3>
+<p class="pub-citation">Genova, J. T., and Hoskere, V. (2026). “Real-Time Vision-Based Adaptive Robotics for Autonomous Crack Repair in Civil Infrastructure.” <em>Journal of Computing in Civil Engineering</em>, American Society of Civil Engineers (ASCE), accepted for publication.</p>
+<div class="pub-meta"><span class="pub-coming">PAPER COMING SOON</span><span class="pub-accept">Accepted · August 2026</span></div>
+<p class="pub-doi">DOI (pending activation): <code>10.1061/JCCEE5.CPENG-7737</code></p>
+<p class="pub-note">Accepted; publisher DOI page pending.</p>
+<a class="pub-project-link" href="https://jtgenova.github.io/robotic-crack-repair/" rel="noopener noreferrer" target="_blank">View project and full experimental results ↗</a>
+</article>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap footer-main"><div><span class="footer-name">FROM PARTICLES<br/>TO PRECISION<span>.</span></span><p>DEM-informed learning and real-time feedback for robotic deposition and repair.</p></div><div class="footer-right"><a href="#top">Back to top ↑</a></div></div><div class="wrap footer-bottom"><span>RESEARCH OVERVIEW · 2026</span><span>GITHUB PAGES</span></div></footer>
+</body>
+</html>
